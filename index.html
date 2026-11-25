@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080b16">
+<meta name="description" content="Nishanth Technology Explore — share bold project ideas and build what comes next.">
+<title>Nishanth Technology Explore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#080b16;--panel:rgba(17,23,43,.72);--line:rgba(161,177,255,.15);--muted:#9aa6c5;--white:#f5f7ff;--blue:#6b8cff;--cyan:#53e0e7;--violet:#a17cff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(ellipse at 15% 8%,rgba(67,91,210,.22),transparent 36%),radial-gradient(ellipse at 88% 30%,rgba(125,70,220,.18),transparent 34%),radial-gradient(ellipse at 50% 100%,rgba(30,170,190,.1),transparent 38%)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.14;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:54px 54px;mask-image:linear-gradient(to bottom,black,transparent 85%)}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.07)}
+.brand{display:flex;align-items:center;gap:12px;font:700 15px "Space Grotesk",sans-serif;letter-spacing:.04em}.brandmark{width:38px;height:38px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#6d8cff,#9c67ef);box-shadow:0 0 28px #6b8cff55;font-size:18px}
+.navlinks{display:flex;gap:30px;color:#aeb8d4;font-size:13px}.navlinks a:hover{color:white}.nav-cta{padding:11px 17px;border:1px solid var(--line);border-radius:99px;font-size:13px}
+.hero{padding:100px 0 86px;display:grid;grid-template-columns:1.15fr .85fr;gap:45px;align-items:center;min-height:590px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 12px;border:1px solid var(--line);border-radius:99px;color:#bdc9ee;font-size:11px;letter-spacing:.12em;text-transform:uppercase;background:#11183188}
+.pulse{width:7px;height:7px;border-radius:50%;background:#57e3c1;box-shadow:0 0 12px #57e3c1}
+h1{font:700 clamp(44px,6vw,76px)/1.03 "Space Grotesk",sans-serif;letter-spacing:-.055em;margin:25px 0 20px}
+.gradient{background:linear-gradient(100deg,#f6f8ff 5%,#8da8ff 48%,#b18bff 90%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{max-width:530px;color:#aab4d0;font-size:17px;line-height:1.8;margin:0 0 30px}
+.actions{display:flex;gap:13px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 20px;border-radius:12px;font-weight:700;font-size:14px;transition:.25s;cursor:pointer;border:0}
+.primary{color:white;background:linear-gradient(110deg,#587eff,#9867ed);box-shadow:0 10px 32px #6b78ff35}.primary:hover{transform:translateY(-3px);box-shadow:0 14px 38px #6b78ff55}
+.secondary{border:1px solid var(--line);background:#ffffff08;color:#e2e8ff}.secondary:hover{background:#ffffff12}
+.visual{height:390px;position:relative;display:grid;place-items:center}
+.orbit{position:absolute;width:300px;height:300px;border:1px solid #9aabff35;border-radius:50%;transform:rotate(-25deg) scaleY(.55);box-shadow:0 0 60px #718bff12}
+.orbit.two{width:390px;height:390px;transform:rotate(55deg) scaleY(.45);border-color:#9c78ff30}
+.core{width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#d8e5ff 0,#789bff 14%,#5e55c9 42%,#191c4a 72%);box-shadow:0 0 70px #778aff70, inset -15px -20px 35px #090c27;position:relative}
+.core:after{content:"";position:absolute;inset:20px;border:1px solid #dce5ff55;border-radius:50%;filter:blur(.3px)}
+.float{position:absolute;padding:12px 15px;border:1px solid var(--line);border-radius:13px;background:#10172dcc;backdrop-filter:blur(12px);font-size:12px;color:#dce4ff;box-shadow:0 12px 35px #0004}
+.float b{display:block;font:600 14px "Space Grotesk";margin-bottom:3px}.f1{top:40px;right:0}.f2{bottom:50px;left:0}.f3{bottom:28px;right:10px}
+.section{padding:75px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 38px}.kicker{color:#91aaff;font-size:11px;letter-spacing:.18em;text-transform:uppercase;font-weight:700}
+h2{font:700 clamp(30px,4vw,44px) "Space Grotesk";letter-spacing:-.04em;margin:13px 0}.section-head p{color:var(--muted);line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{padding:25px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,#151d35b8,#0e1427b8);min-height:190px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:#8b9fff55}.ico{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;background:#778dff1c;color:#a9baff;font-size:20px;margin-bottom:20px}.card h3{font:600 18px "Space Grotesk";margin:0 0 9px}.card p{color:var(--muted);font-size:13px;line-height:1.7;margin:0}
+.form-section{padding:72px 0 100px}.form-shell{max-width:790px;margin:auto;border:1px solid #9eafff27;border-radius:24px;padding:clamp(22px,5vw,44px);background:linear-gradient(145deg,#151d37dd,#0e1427e8);box-shadow:0 25px 90px #0005;position:relative;overflow:hidden}
+.form-shell:before{content:"";position:absolute;width:300px;height:300px;right:-150px;top:-190px;background:#786dff35;filter:blur(75px);pointer-events:none}
+.form-top{text-align:center;margin-bottom:30px;position:relative}.form-top p{color:var(--muted);line-height:1.7}
+form{position:relative}.grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{display:flex;flex-direction:column;gap:8px;margin-bottom:17px}.field.full{grid-column:1/-1}label{font-size:12px;color:#d5ddf6;font-weight:600}input,select,textarea{width:100%;border:1px solid #9eaddb28;border-radius:11px;background:#080e20b8;color:#f5f7ff;padding:14px 15px;font:14px "DM Sans";outline:none;transition:.2s}input:focus,select:focus,textarea:focus{border-color:#8199ff;box-shadow:0 0 0 3px #7890ff18}input::placeholder,textarea::placeholder{color:#687594}select{appearance:none}select option{background:#10172c}textarea{min-height:135px;resize:vertical;line-height:1.6}
+.submit{width:100%;margin-top:4px;font-size:15px;padding:16px}.hint{color:#8390b2;font-size:11px;text-align:center;margin:13px 0 0;line-height:1.6}.status{display:none;margin-top:14px;padding:12px;border-radius:10px;background:#163b35;color:#9cf0cf;font-size:13px;text-align:center}
+footer{border-top:1px solid #ffffff12;padding:27px 0;color:#8390ad;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+@media(max-width:760px){.navlinks{display:none}.hero{grid-template-columns:1fr;padding:72px 0 35px;gap:0}.visual{height:310px;transform:scale(.88)}.cards{grid-template-columns:1fr}.section{padding:55px 0}.grid{grid-template-columns:1fr}.field.full{grid-column:auto}h1{font-size:clamp(43px,12vw,64px)}.lead{font-size:15px}.f1{right:0}.wrap{width:min(100% - 30px,1120px)}}
+</style>
+</head>
+<body>
+<header class="wrap">
+<nav>
+<a class="brand" href="#"><span class="brandmark">N<span style="font-size:10px">/</span></span><span>NISHANTH<br><span style="color:#9eafff;font-size:10px;letter-spacing:.19em">TECHNOLOGY EXPLORE</span></span></a>
+<div class="navlinks"><a href="#about">About</a><a href="#focus">Explore</a><a href="#submit">Suggest an idea</a></div>
+<a class="nav-cta" href="#submit">Share your idea ↗</a>
+</nav>
+</header>
+<main>
+<section class="hero wrap">
+<div>
+<div class="eyebrow"><span class="pulse"></span> IDEAS INTO INNOVATION</div>
+<h1>Think beyond.<br><span class="gradient">Build what's next.</span></h1>
+<p class="lead">Welcome to Nishanth Technology Explore — a space for curious minds, bold ideas, and next-generation projects. Have an idea? Let's explore what it could become.</p>
+<div class="actions"><a class="btn primary" href="#submit">Share your project idea <span>↗</span></a><a class="btn secondary" href="#focus">Explore the vision ↓</a></div>
+</div>
+<div class="visual" aria-hidden="true">
+<div class="orbit"></div><div class="orbit two"></div><div class="core"></div>
+<div class="float f1"><b>01 / IMAGINE</b>Every great project starts somewhere</div>
+<div class="float f2"><b>02 / CREATE</b>Turn curiosity into possibility</div>
+<div class="float f3"><b>✦ INNOVATION</b>Ideas have no limits</div>
+</div>
+</section>
+<section class="section wrap" id="about">
+<div class="section-head"><div class="kicker">THE MISSION</div><h2>A place where <span class="gradient">ideas take shape.</span></h2><p>Technology moves forward when people share what they imagine. This platform is an open invitation to contribute ideas, explore possibilities, and spark meaningful projects.</p></div>
+</section>
+<section class="section wrap" id="focus">
+<div class="section-head"><div class="kicker">EXPLORE POSSIBILITIES</div><h2>What could we <span class="gradient">build together?</span></h2><p>Share ideas across technology and creativity. Your suggestion can be a starting point for something exciting.</p></div>
+<div class="cards">
+<div class="card"><div class="ico">⌘</div><h3>AI & Automation</h3><p>Smart assistants, useful automations, machine learning concepts, and tools that make everyday tasks easier.</p></div>
+<div class="card"><div class="ico">◈</div><h3>Cybersecurity</h3><p>Defensive security, privacy tools, awareness platforms, and ways to make digital experiences safer.</p></div>
+<div class="card"><div class="ico">⌁</div><h3>Apps & Web</h3><p>Websites, mobile applications, dashboards, and digital experiences that solve real problems.</p></div>
+</div>
+</section>
+<section class="form-section wrap" id="submit">
+<div class="form-shell">
+<div class="form-top"><div class="kicker">YOUR IDEA STARTS HERE</div><h2>Let's hear what you're <span class="gradient">imagining.</span></h2><p>Fill in the details below. Submit to open WhatsApp with your idea ready to send.</p></div>
+<form id="ideaForm">
+<div class="grid">
+<div class="field"><label for="name">Your name *</label><input id="name" name="name" placeholder="What should we call you?" required maxlength="80"></div>
+<div class="field"><label for="email">Email (optional)</label><input id="email" name="email" type="email" placeholder="you@example.com" maxlength="120"></div>
+<div class="field full"><label for="title">Project idea title *</label><input id="title" name="title" placeholder="Give your idea a name" required maxlength="120"></div>
+<div class="field full"><label for="category">Project category *</label><select id="category" name="category" required><option value="" disabled selected>Select a category</option><option>Artificial Intelligence</option><option>Cybersecurity</option><option>Web Development</option><option>Mobile Application</option><option>Software / Automation</option><option>Hardware / IoT</option><option>Education</option><option>Other</option></select></div>
+<div class="field full"><label for="idea">Describe your idea *</label><textarea id="idea" name="idea" placeholder="What problem could it solve? How might it work? Share as much as you'd like..." required minlength="10" maxlength="3000"></textarea></div>
+</div>
+<button class="btn primary submit" type="submit">Submit idea via WhatsApp <span>↗</span></button>
+<p class="hint">Your WhatsApp app will open with a prepared message. You will review it and press Send yourself.</p>
+<div class="status" id="status" role="status">WhatsApp is opening. Please review your message and press Send.</div>
+</form>
+</div>
+</section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> Nishanth Technology Explore</span><span>Explore ideas. Build innovation. ✦</span></div></footer>
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('ideaForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  if(!this.reportValidity()) return;
+  const data = new FormData(this);
+  const message = [
+    'Hello Nishanth! I would like to suggest a project idea.',
+    '',
+    'Name: ' + data.get('name'),
+    'Email: ' + (data.get('email') || 'Not provided'),
+    'Project title: ' + data.get('title'),
+    'Category: ' + data.get('category'),
+    '',
+    'Project idea:',
+    data.get('idea'),
+    '',
+    'Sent via Nishanth Technology Explore website.'
+  ].join('\n');
+  document.getElementById('status').style.display = 'block';
+  const url = 'https://wa.me/919347235563?text=' + encodeURIComponent(message);
+  window.open(url, '_blank', 'noopener,noreferrer');
+});
+</script>
+</body>
+</html>
